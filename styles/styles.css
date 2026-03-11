@@ -1,15 +1,42 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #255F38;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    color: white;
-    background-color: black;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 16%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .container {
-    margin: 10% 18%;
+    margin: 5.3% 16%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +44,6 @@ body {
 
 .container__apresentacao {
     width: 615px;
-    height: 480px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -25,16 +51,16 @@ body {
 
 .container__apresentacao__titulo {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 .container__apresentacao__titulo-destaque {
-    color: #255F38;
+    color: var(--cor-terciaria);
 }
 
 .container__apresentacao__texto {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .container__apresentacao__links {
@@ -45,8 +71,8 @@ body {
 }
 
 .container__apresentacao__links h2 {
-    color: #f6f6f6;
-    font-family: 'Krona One', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -56,23 +82,23 @@ body {
     justify-content: center;
     gap: 16px;
     align-items: baseline;
-    border: 1px solid #255F38;
-    border-top: 3px solid #255F38;
+    border: 1px solid var(--cor-terciaria);
+    border-top: 3px solid var(--cor-terciaria);
     border-bottom: 0px; 
     border-radius: 8px;
     width: 381px;
     padding: 21.5px 0px;
     text-align: center;
     font-size: 24px;
-    font-family: 'Monstserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     text-decoration: none;
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
 }
 
 .container__apresentacao__links__link:hover {
-    background-color: #2f2f2f;
-    padding: 4%;
+    background-color: var(--cor-hover);
+    padding: 3.5%;
 }
 
 .foto__perfil {
@@ -82,10 +108,10 @@ body {
 }
 
 .rodape {
-    color: black;
-    background-color: #255F38;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     padding: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
     text-align: center;
