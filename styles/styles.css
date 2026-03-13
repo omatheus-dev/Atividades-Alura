@@ -1,8 +1,9 @@
 :root {
-    --cor-primaria: #000000;
+    --cor-primaria: #212121;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #255F38;
-    --cor-hover: #272727;
+    --cor-hover: #303030;
+    --cor-hover2: #A2CB8B;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -96,9 +97,37 @@ body {
     color: var(--cor-secundaria);
 }
 
+.container__apresentacao__conteudos {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.container__apresentacao__conteudos__conteudo {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.container__apresentacao__conteudos__links {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    border-radius: 0px 8px 0px 8px;
+    padding: 6px;
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
 .container__apresentacao__links__link:hover {
     background-color: var(--cor-hover);
     padding: 3.5%;
+}
+
+.container__apresentacao__conteudos__links:hover {
+    background-color: var(--cor-hover2);
 }
 
 .foto__perfil {
