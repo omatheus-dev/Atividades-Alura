@@ -2,8 +2,8 @@
     --cor-primaria: #212121;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #255F38;
+    --cor-quartenaria: #427A43;
     --cor-hover: #303030;
-    --cor-hover2: #A2CB8B;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -31,7 +31,7 @@ body {
 .cabecalho__menu__link {
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -41,17 +41,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .container__apresentacao {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.container__apresentacao__titulo {
-    font-size: 36px;
+.container__apresentacao__titulo, .container__apresentacao__titulo__studies {
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -60,7 +61,7 @@ body {
 }
 
 .container__apresentacao__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -71,11 +72,11 @@ body {
     align-items: center;
 }
 
-.container__apresentacao__links h2 {
+.container__apresentacao__links__subtitulo {
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .container__apresentacao__links__link {
@@ -90,7 +91,7 @@ body {
     width: 381px;
     padding: 21.5px 0px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     text-decoration: none;
@@ -102,12 +103,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    height: auto;
 }
 
 .container__apresentacao__conteudos__conteudo {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+    padding: 3%;
 }
 
 .container__apresentacao__conteudos__links {
@@ -116,8 +119,7 @@ body {
     border-radius: 0px 8px 0px 8px;
     padding: 6px;
     letter-spacing: 0.8px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1.12rem;
     text-decoration: none;
 }
 
@@ -127,12 +129,11 @@ body {
 }
 
 .container__apresentacao__conteudos__links:hover {
-    background-color: var(--cor-hover2);
+    background-color: var(--cor-quartenaria);
 }
 
 .foto__perfil {
-    height: 540px;
-    width: 550px;
+    width: 45%;
     border-radius: 20px;
 }
 
@@ -141,7 +142,80 @@ body {
     background-color: var(--cor-terciaria);
     padding: 24px;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 8%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        margin: 0% 10% 10% 10%;
+    }
+
+    .container__apresentacao {
+        width: auto;
+    }
+
+    .foto__perfil {
+        width: 70%;
+    }
+}
+
+@media (max-width: 570px) {
+    .cabecalho__menu {
+        gap: 40px
+    }
+
+    .foto__perfil {
+        width: 100%;
+    }
+
+    .container__apresentacao {
+        margin: auto;
+    }
+
+    .container__apresentacao__titulo {
+        font-size: 1.15rem;
+    }
+
+    .container__apresentacao__texto {
+        font-size: 1rem;
+    }
+
+    .container__apresentacao__links__subtitulo {
+        font-size: 1.15rem;
+    }
+
+    .container__apresentacao__links__link {
+        font-size: 1.15rem;
+    }
+
+    .container__apresentacao__links__link {
+        width: 90%;
+    }
+
+    .container__apresentacao__titulo__studies {
+        font-size: 1.90rem;
+    }
+
+    .container__apresentacao__conteudos {
+        height: auto;
+    }
+    .container__apresentacao__conteudos__conteudo {
+        padding: 3%;
+    }
+
+    .rodape {
+        font-size: 1rem;
+    }
 }
