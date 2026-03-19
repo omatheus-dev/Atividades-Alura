@@ -18,33 +18,36 @@ body {
 }
 
 .container {
-    height: 100vh;
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     text-align: center;
+    height: 100vh;
 }
 
-.container__conteudo {
+.container__primario {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container__primario__conteudo {
     margin: 0em 6.5em;
     padding: 0em 4em;
 }
 
-.container__titulo {
+.container__primario__titulo, .container__subtitulo, .container__texto {
     font-family: var(--fonte-principal);
     font-weight: bold;
     font-size: 1.6rem;
     color: var(--cor-primaria);
 }
 
-.container__imagem {
+.container__primario__imagem {
     margin: 1.5em 0 3.5em 0;
 }
 
-.container__botao {
+.container__primario__botao, .container__terciario__botao {
     font-family: var(--fonte-principal);
     font-size: 1rem;
     text-decoration: none;
@@ -61,8 +64,62 @@ body {
     border: 1px solid var(--cor-primaria);
 }
 
-.container__aviso {
+.container__primario__aviso {
     font-family: var(--fonte-principal);
     font-size: 0.65rem;
     color: var(--cor-terciaria);
+}
+
+.container__secundario__conteudo, 
+.container__terciario__conteudo, 
+.container__quartenario__conteudo {
+    max-width: 80%;
+    text-align: start;
+}
+
+.container__secundario__imagem,
+.container__quartenario__imagem {
+    margin: 0 16em;
+}
+
+.container__subtitulo{
+    font-size: 2.7rem;
+    margin-bottom: 0.2em;
+}
+
+.container__texto {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.container__terciario__conteudo {
+    margin-left: 15em;
+}
+
+.botao-terciario {
+    font-weight: 200;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__dispositivos {
+    display: grid;
+    margin: 0 16em;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.container__dispositivos__lista {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 2.5em;
+}
+
+.subtitulo__icone-dispositivo {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 1.8rem;
 }
