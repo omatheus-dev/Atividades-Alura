@@ -1,0 +1,26 @@
+:root {
+  --fonte: "Montserrat", "sans-serif";
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #E2E2E2;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
